@@ -1,0 +1,10 @@
+.left,
+.right {
+    height: 100vh;
+}
+
+.right {
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
