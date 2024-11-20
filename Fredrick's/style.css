@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@647&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 647;
+    font-style: normal;
+    --main-color: #09f386;
+    --sub-color: #5aee9d;
+
+}
+
+
+body {
+    background-color: #1E222C;
+    color: #525252;
+    font-size: 13px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT"0, ;
+}
+
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #1E222C;
+    padding: 24px 20px;
+    border-radius: 16px;
+    margin-inline: 2rem;
+    box-shadow: 1px 4px 8px 0 rgba(12, 12, 12, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.content {
+    width: 350px;
+    text-align: center;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1 {
+    margin-block: 28px;
+    color: #eeeeee;
+    font-size: 38px;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT"0, ;
+    margin-top: 6px;
+    width: 100%;
+
+}
+
+.primary-button,
+.secondary-button {
+    width: 100%;
+    border-radius: 30px;
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.primary-button {
+    background-color: transparent;
+    color: #c7c5c5;
+    border: 1px solid rgba(133, 131, 131, 0.479);
+    padding: 12px;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "XROT"0, "YROT"0;
+
+}
+
+
+
+.secondary-button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #536471;
+}
+
+.secondary-button:hover {
+    background-color: #181919;
+}
+
+.sign-in-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.sign-in-button object {
+    width: 24px;
+    height: 24px;
+}
+
+.divider {
+    width: 100%;
+    margin-block: 20px;
+    position: relative;
+    color: #4d4d4d;
+
+}
+
+.divider p::before,
+.divider p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    height: 0.1px;
+    background-color: #444444;
+}
+
+.divider p::before {
+    left: 0;
+}
+
+.divider p::after {
+    right: 0;
+}
+
+.email-log-in {
+    width: 100%;
+    position: relative;
+}
+
+.email-log-in input {
+    width: 100%;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid rgba(133, 131, 131, 0.479);
+    outline: none;
+    padding: 20px 5px;
+    color: rgb(224, 224, 224);
+    font-size: 14px;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT"0,
+
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input+label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #71767b;
+    font-size: 15px;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT"0, "YROT"0;
+    pointer-events: none;
+    transition: 200ms ease;
+}
+
+input:focus {
+    outline: 1px solid #09f386;
+}
+
+input:focus+label {
+    color: #09f386;
+}
+
+input:not(:placeholder-shown)+label,
+input:focus+label {
+    top: 6px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.sign-up {
+    margin-top: 32px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sign-up a {
+    color: #54f0a7;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+    text-decoration-color: #09f386;
+}
+
+
+/*profile*/
+
+.profile {
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+i {
+
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    /* Distributes space between items */
+    align-items: center;
+    /* Vertically centers the items */
+    margin: 10px 0;
+    /* Optional: add some vertical margin for spacing */
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.forgot-password a {
+    color: #09f386;
+    text-decoration: none;
+}
