@@ -12,3 +12,5 @@ While the frontend, optimized for mobile viewers, was developed by a peer, I foc
 
 I worked on this project from June 2024 to July 2024. During this project, I used a procedural approach to establish database connections.
 Since then, I’ve transitioned to an Object-Oriented Programming (OOP) approach for better code organization, reusability, and maintainability, especially for database management using classes and methods.
+
+Due to budget constraints on the client’s side, the development of the application was halted, and the system was not published.
