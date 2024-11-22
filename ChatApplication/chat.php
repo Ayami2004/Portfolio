@@ -48,7 +48,7 @@
 
                 session_start();
 
-                $connection = new mysqli("localhost", "root", "V@123Vishwa?", "test", "3306");
+                $connection = new mysqli("localhost", "root", "...", "test", "3306");
 
                 if ($connection->connect_error) {
                     echo ("Connection Failed");
